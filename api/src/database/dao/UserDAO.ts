@@ -4,7 +4,7 @@ import { Connection } from '../connection';
 
 export default class UserDAO {
 
-    private async findAllRecords(db: Connection, params: {
+    async findAllRecords(db: Connection, params: {
         userIds?: number[],
         entityId?: number,
         includeDeleted?: boolean,

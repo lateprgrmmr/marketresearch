@@ -40,25 +40,3 @@ export async function getConnection(): Promise<massive.Database> {
     _db = await getConnectionForOffline(connectionInfo);
     return _db;
 }
-
-// massive(defaultConnectionInfo).then(db => {
-//     app.set('db', db);
-
-//     app.listen(PORT, () => {
-//         console.log(`Server is running on port ${PORT}`);
-//     });
-// }).catch(err => {
-//     console.error('Error connecting to the database:', err);
-// });
-
-// export default app;
-
-// const pool = new Pool({
-//     user: process.env.POSTGRES_USER,
-//     host: 'localhost',
-//     database: process.env.POSTGRES_DB,
-//     password: process.env.POSTGRES_PASSWORD,
-//     port: 3452,
-// });
-
-// export default pool;
