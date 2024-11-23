@@ -2,3 +2,4 @@
 .DS_Store
 .vscode/launch.json
 /.idea/
+./node_modules/
